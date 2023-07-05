@@ -1,17 +1,24 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-(fill in your description and goals here)
+The goal of statistical modelling project using python is to pull data from different source using GET API and convert the available content to a suitable format for EDA . By using panda the data has to be cleaned and visualized using ploty , seaborn or any other relevant libraries. Try to find relations and derive valuable business insights. Finally do a linear regression analysis to validate the insights    
 
 ## Process
-### (your step 1)
-### (your step 2)
+Connect to the CityBikes API and understand the data structure.
+Choose a city covered by the CityBikes API and retrieve all available bike stations in that city.
+Query the API for latitude, longitude, and number of bikes for each bike station.
+Connect to the Foursquare API and Yelp API.
+For each bike station, query both APIs to retrieve information on restaurants, bars, and other points of interest in that location.
+Create separate dataframes for the Yelp and Foursquare results.
+Compare the quality and coverage of the Yelp and Foursquare APIs based on your own criteria.
+Join the data from the CityBikes API with the data from Foursquare and Yelp APIs to create a new dataframe.
+Build a regression model using the statsmodels module to explore the relationship between the number of bikes and the characteristics of the points of interest. Interpret the results and derive insights from the model.
 
 ## Results
-(fill in what you found about the comparative quality of API coverage in your chosen area and the results of your model.)
+I am able to sucessfuly query multiple API and Parse through the response to get the Point og intrest details. I was able to combine all 3 different source of data and did exploratory data analysis and derive valuble insits and relations. finally created a linear regression modle for bikes avilable and the slots count. 
 
 ## Challenges 
-(discuss challenges you faced in the project)
+Due to the limited data availability, it was challenging to establish a strong relationship between the restaurants and bike stations. With only 20 available restaurants compared to 700 bike stations in the city, conducting a meaningful comparison became difficult. Furthermore, most of the variables lacked a significant correlation making it dificult to find insights.
 
 ## Future Goals
-(what would you do if you had more time?)
+Given more time, I would think about utilizing string and catagorical variable to find relation and insights. I would have done more practice with coding to improve my skills.
